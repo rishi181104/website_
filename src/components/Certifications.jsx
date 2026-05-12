@@ -5,6 +5,7 @@ import cert200hr from "../assets/200hoursyoga.jpg";
 import cert300hr from "../assets/300hoursofyoga.jpg";
 import certPrenatal from "../assets/prenatalyoga.jpg";
 import certBala from "../assets/balayogacertificate.jpeg";
+import certFaceYoga from "../assets/faceyoga.jpg";
 
 const certificates = [
   {
@@ -38,6 +39,14 @@ const certificates = [
     issuer: "Bodhi School of Yoga",
     badge: "95 Hours · Kids Yoga",
     year: "2025",
+  },
+  {
+    id: 5,
+    image: certFaceYoga,
+    title: "Face Yoga Teacher Training",
+    issuer: "Bodhi School of Yoga",
+    badge: "Face Yoga Specialist",
+    year: "2023",
   },
 ];
 

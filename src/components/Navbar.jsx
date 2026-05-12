@@ -218,7 +218,17 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileOpen(false);
+                    // Delay scroll to allow menu close & body overflow reset
+                    setTimeout(() => {
+                      const target = document.querySelector(link.href);
+                      if (target) {
+                        target.scrollIntoView({ behavior: "smooth", block: "start" });
+                      }
+                    }, 350);
+                  }}
                   style={{
                     color: "#555",
                     textDecoration: "none",
