@@ -34,14 +34,15 @@ export default function About() {
               margin: "0 auto",
               textAlign: "center",
               position: "relative",
+              padding: "0 0.25rem",
             }}
           >
             {/* Decorative leaf */}
             <span
               style={{
                 display: "block",
-                fontSize: "2.5rem",
-                marginBottom: "1rem",
+                fontSize: "clamp(2rem, 5vw, 2.5rem)",
+                marginBottom: "0.75rem",
                 opacity: 0.7,
               }}
               aria-hidden="true"
@@ -52,10 +53,10 @@ export default function About() {
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                fontSize: "clamp(1.3rem, 3.5vw, 2.4rem)",
                 fontWeight: 700,
                 color: "var(--color-primary-dark)",
-                marginBottom: "1.5rem",
+                marginBottom: "clamp(0.75rem, 2.5vw, 1.5rem)",
               }}
             >
               About Agastya
@@ -64,13 +65,13 @@ export default function About() {
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "1.05rem",
-                lineHeight: 1.8,
+                fontSize: "clamp(0.88rem, 2.2vw, 1.05rem)",
+                lineHeight: 1.75,
                 color: "#555",
                 fontWeight: 300,
               }}
             >
-              Agastya is an online power yoga platform created to help women feel
+              Agastya is an online hatha yoga platform created to help women feel
               stronger, healthier, and more confident through guided yoga practices.
               We believe that every woman deserves a space to reconnect with her body,
               build inner strength, and discover the transformative power of consistent
@@ -84,7 +85,7 @@ export default function About() {
                 height: "3px",
                 background: "var(--color-primary)",
                 borderRadius: "2px",
-                margin: "2rem auto 0",
+                margin: "clamp(1.25rem, 3vw, 2rem) auto 0",
               }}
             />
           </div>

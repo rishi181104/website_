@@ -6,6 +6,7 @@ import FounderStory from "./components/FounderStory";
 import Benefits from "./components/Benefits";
 import Programs from "./components/Programs";
 import Instructor from "./components/Instructor";
+import Certifications from "./components/Certifications";
 import Differentiators from "./components/Differentiators";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ export default function App() {
         <Benefits />
         <Programs />
         <Instructor />
+        <Certifications />
         <Differentiators />
         <FinalCTA />
       </main>

@@ -4,7 +4,7 @@ export default function FloatingWhatsApp() {
   return (
     <a
       id="floating-whatsapp"
-      href={whatsappLink("Hi, I want to start my journey with Agastya Power Yoga")}
+      href={whatsappLink("Hi, I want to start my journey with Agastya Hatha Yoga")}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick("floating_button")}

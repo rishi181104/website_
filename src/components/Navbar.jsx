@@ -123,7 +123,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={whatsappLink("Hi, I want to book my free trial class with Agastya Power Yoga")}
+            href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("navbar_cta")}
@@ -232,7 +232,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href={whatsappLink("Hi, I want to book my free trial class with Agastya Power Yoga")}
+                href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {

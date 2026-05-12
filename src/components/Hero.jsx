@@ -9,11 +9,11 @@ export default function Hero() {
       id="hero"
       style={{
         background: "linear-gradient(180deg, var(--color-cream) 0%, var(--color-warm-white) 100%)",
-        minHeight: "80vh",
+        minHeight: "min(80vh, 600px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "4rem 1rem 3rem",
+        padding: "clamp(2.5rem, 6vw, 4rem) 1rem clamp(2rem, 5vw, 3rem)",
         position: "relative",
         overflow: "hidden",
       }}
@@ -70,15 +70,15 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{
             fontFamily: "var(--font-heading)",
-            fontSize: "clamp(1.75rem, 5vw, 3.5rem)",
+            fontSize: "clamp(1.5rem, 5vw, 3.5rem)",
             fontWeight: 700,
             color: "var(--color-primary-dark)",
             lineHeight: 1.2,
-            marginBottom: "1.25rem",
-            padding: "0 0.5rem",
+            marginBottom: "1rem",
+            padding: "0 0.25rem",
           }}
         >
-          Empower Your Mind &amp; Body Through Power Yoga
+          Empower Your Mind &amp; Body Through Hatha Yoga
         </motion.h1>
 
         <motion.p
@@ -87,16 +87,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           style={{
             fontFamily: "var(--font-body)",
-            fontSize: "clamp(0.9rem, 2vw, 1.15rem)",
+            fontSize: "clamp(0.85rem, 2vw, 1.15rem)",
             color: "#666",
-            lineHeight: 1.7,
+            lineHeight: 1.65,
             maxWidth: "650px",
-            margin: "0 auto 2rem",
+            margin: "0 auto 1.75rem",
             fontWeight: 300,
-            padding: "0 0.5rem",
+            padding: "0 0.25rem",
           }}
         >
-          Online power yoga sessions designed for women and students to build strength,
+          Online hatha yoga sessions designed for women and students to build strength,
           flexibility, confidence, and inner peace from the comfort of home.
         </motion.p>
 
@@ -104,30 +104,27 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          style={{
-            display: "flex",
-            gap: "0.75rem",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            padding: "0 0.5rem",
-          }}
+          className="hero-cta-buttons"
         >
           <a
-            href={whatsappLink("Hi, I want to start my journey with Agastya Power Yoga")}
+            href={whatsappLink("Hi, I want to start my journey with Agastya Hatha Yoga")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("hero_start_journey")}
             style={{
               background: "var(--color-primary)",
               color: "#fff",
-              padding: "0.85rem 1.75rem",
+              padding: "0.8rem 1.5rem",
               borderRadius: "9999px",
-              fontSize: "0.9rem",
+              fontSize: "clamp(0.82rem, 2vw, 0.9rem)",
               fontWeight: 600,
               textDecoration: "none",
               transition: "all 0.3s",
               boxShadow: "0 4px 20px rgba(78,95,69,0.25)",
               whiteSpace: "nowrap",
+              minHeight: "48px",
+              display: "inline-flex",
+              alignItems: "center",
             }}
             onMouseEnter={(e) => {
               e.target.style.background = "var(--color-primary-dark)";
@@ -143,21 +140,24 @@ export default function Hero() {
             Start Your Journey
           </a>
           <a
-            href={whatsappLink("Hi, I want to learn more about Agastya Power Yoga")}
+            href={whatsappLink("Hi, I want to learn more about Agastya Hatha Yoga")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("hero_chat_whatsapp")}
             style={{
               background: "transparent",
               color: "var(--color-primary)",
-              padding: "0.85rem 1.75rem",
+              padding: "0.8rem 1.5rem",
               borderRadius: "9999px",
-              fontSize: "0.9rem",
+              fontSize: "clamp(0.82rem, 2vw, 0.9rem)",
               fontWeight: 600,
               textDecoration: "none",
               border: "2px solid var(--color-primary)",
               transition: "all 0.3s",
               whiteSpace: "nowrap",
+              minHeight: "48px",
+              display: "inline-flex",
+              alignItems: "center",
             }}
             onMouseEnter={(e) => {
               e.target.style.background = "var(--color-primary)";

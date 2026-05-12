@@ -1,7 +1,7 @@
 import ScrollReveal from "./ScrollReveal";
 
 const BENEFITS = [
-  { icon: "💪", title: "Build Strength", desc: "Develop functional muscle strength through guided power yoga flows." },
+  { icon: "💪", title: "Build Strength", desc: "Develop functional muscle strength through guided hatha yoga flows." },
   { icon: "🧘‍♀️", title: "Improve Flexibility", desc: "Gradually increase your range of motion with safe, progressive stretches." },
   { icon: "✨", title: "Boost Confidence", desc: "Watch your self-esteem soar as you achieve poses you never thought possible." },
   { icon: "🕊️", title: "Find Inner Peace", desc: "Calm your mind with breathwork and mindfulness integrated into every session." },
@@ -18,23 +18,23 @@ export default function Benefits() {
     >
       <div className="container-main">
         <ScrollReveal>
-          <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
+          <div style={{ textAlign: "center", marginBottom: "clamp(1.5rem, 4vw, 2.5rem)" }}>
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "clamp(1.5rem, 3.5vw, 2.4rem)",
+                fontSize: "clamp(1.3rem, 3.5vw, 2.4rem)",
                 fontWeight: 700,
                 color: "var(--color-primary-dark)",
-                marginBottom: "0.75rem",
+                marginBottom: "0.5rem",
               }}
             >
-              What Power Yoga Will Do For You
+              What Hatha Yoga Will Do For You
             </h2>
             <p
               style={{
                 fontFamily: "var(--font-body)",
                 color: "#888",
-                fontSize: "0.95rem",
+                fontSize: "clamp(0.82rem, 2vw, 0.95rem)",
                 fontWeight: 300,
               }}
             >
@@ -50,22 +50,22 @@ export default function Benefits() {
                 className="card-hover"
                 style={{
                   background: "var(--color-cream)",
-                  borderRadius: "1rem",
-                  padding: "1.5rem 1.25rem",
+                  borderRadius: "clamp(0.75rem, 2vw, 1rem)",
+                  padding: "clamp(1rem, 3vw, 1.5rem) clamp(0.875rem, 2.5vw, 1.25rem)",
                   display: "flex",
                   flexDirection: "column",
-                  gap: "0.5rem",
+                  gap: "0.35rem",
                   cursor: "default",
                   border: "1px solid rgba(78,95,69,0.06)",
                 }}
               >
-                <span style={{ fontSize: "1.75rem" }} aria-hidden="true">
+                <span style={{ fontSize: "clamp(1.4rem, 3.5vw, 1.75rem)" }} aria-hidden="true">
                   {b.icon}
                 </span>
                 <h3
                   style={{
                     fontFamily: "var(--font-heading)",
-                    fontSize: "1.1rem",
+                    fontSize: "clamp(0.95rem, 2.5vw, 1.1rem)",
                     fontWeight: 700,
                     color: "var(--color-primary-dark)",
                   }}
@@ -75,9 +75,9 @@ export default function Benefits() {
                 <p
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "0.85rem",
+                    fontSize: "clamp(0.78rem, 2vw, 0.85rem)",
                     color: "#666",
-                    lineHeight: 1.6,
+                    lineHeight: 1.55,
                     fontWeight: 300,
                   }}
                 >

@@ -6,9 +6,12 @@ export default function Footer() {
   const linkStyle = {
     color: "rgba(244,240,230,0.7)",
     textDecoration: "none",
-    fontSize: "0.9rem",
+    fontSize: "clamp(0.82rem, 2vw, 0.9rem)",
     fontWeight: 300,
     transition: "color 0.2s",
+    minHeight: "44px",
+    display: "inline-flex",
+    alignItems: "center",
   };
 
   return (
@@ -16,7 +19,7 @@ export default function Footer() {
       id="contact"
       style={{
         background: "var(--color-primary-dark)",
-        padding: "3.5rem 1.5rem 2rem",
+        padding: "clamp(2.5rem, 6vw, 3.5rem) clamp(1rem, 3vw, 1.5rem) clamp(1.5rem, 4vw, 2rem)",
         fontFamily: "var(--font-body)",
       }}
     >
@@ -26,7 +29,7 @@ export default function Footer() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "2rem",
+          gap: "1.5rem",
         }}
       >
         {/* Logo */}
@@ -41,13 +44,14 @@ export default function Footer() {
             alignItems: "center",
             gap: "0.5rem",
             textDecoration: "none",
+            minHeight: "48px",
           }}
         >
           <img
             src={agastyaLogo}
             alt="AGASTYA Logo"
             style={{
-              height: "44px",
+              height: "clamp(36px, 6vw, 44px)",
               width: "auto",
               borderRadius: "4px",
             }}
@@ -55,7 +59,7 @@ export default function Footer() {
           <span
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "1.5rem",
+              fontSize: "clamp(1.25rem, 3vw, 1.5rem)",
               fontWeight: 700,
               color: "var(--color-cream)",
               letterSpacing: "0.06em",
@@ -66,7 +70,7 @@ export default function Footer() {
         </a>
 
         {/* Links */}
-        <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}>
+        <div style={{ display: "flex", gap: "clamp(0.75rem, 3vw, 1.5rem)", flexWrap: "wrap", justifyContent: "center" }}>
           <a href="#about" style={linkStyle}>About</a>
           <a href="#programs" style={linkStyle}>Programs</a>
           <a href="#instructor" style={linkStyle}>Instructor</a>
@@ -79,7 +83,7 @@ export default function Footer() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "0.6rem",
+            gap: "0.5rem",
           }}
         >
           <a
@@ -88,8 +92,6 @@ export default function Footer() {
             rel="noopener noreferrer"
             style={{
               ...linkStyle,
-              display: "flex",
-              alignItems: "center",
               gap: "0.4rem",
             }}
           >
@@ -101,8 +103,6 @@ export default function Footer() {
             rel="noopener noreferrer"
             style={{
               ...linkStyle,
-              display: "flex",
-              alignItems: "center",
               gap: "0.4rem",
             }}
           >
@@ -123,11 +123,12 @@ export default function Footer() {
         <p
           style={{
             color: "rgba(244,240,230,0.4)",
-            fontSize: "0.8rem",
+            fontSize: "clamp(0.72rem, 2vw, 0.8rem)",
             fontWeight: 300,
+            textAlign: "center",
           }}
         >
-          © {currentYear} AGASTYA Power Yoga. All rights reserved.
+          © {currentYear} AGASTYA Hatha Yoga. All rights reserved.
         </p>
       </div>
     </footer>

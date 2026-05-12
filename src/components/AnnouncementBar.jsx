@@ -23,18 +23,20 @@ export default function AnnouncementBar() {
         background: "var(--color-primary)",
         color: "#fff",
         fontFamily: "var(--font-body)",
-        fontSize: "0.78rem",
-        padding: "0.5rem 2.5rem 0.5rem 0.75rem",
+        fontSize: "clamp(0.7rem, 2vw, 0.8rem)",
+        padding: "0.5rem 2.5rem 0.5rem 0.5rem",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         gap: "0.5rem",
         position: "relative",
         zIndex: 60,
+        textAlign: "center",
+        lineHeight: 1.4,
       }}
     >
       <a
-        href={whatsappLink("Hi, I want to book my free trial class with Agastya Power Yoga")}
+        href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsAppClick("announcement_bar")}
@@ -44,21 +46,26 @@ export default function AnnouncementBar() {
           textUnderlineOffset: "3px",
         }}
       >
-        🧘‍♀️ Founding Batch — Only 10 Seats Available. Book Your Free Trial Class Today.
+        🧘‍♀️ Founding Batch — Only 10 Seats. Book Your Free Trial Today.
       </a>
       <button
         onClick={handleDismiss}
         aria-label="Dismiss announcement"
         style={{
           position: "absolute",
-          right: "0.75rem",
+          right: "0.5rem",
           background: "transparent",
           border: "none",
           color: "#fff",
-          fontSize: "1.2rem",
+          fontSize: "1.3rem",
           cursor: "pointer",
           lineHeight: 1,
-          padding: "0.25rem",
+          padding: "0.35rem",
+          minWidth: "44px",
+          minHeight: "44px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         ×

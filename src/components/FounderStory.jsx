@@ -15,15 +15,15 @@ export default function FounderStory() {
             <div className="founder-photo-col">
               <img
                 src={rashmithaPortrait}
-                alt="Rashmitha — Founder of AGASTYA Power Yoga"
+                alt="Rashmitha — Founder of AGASTYA Hatha Yoga"
                 style={{
                   width: "100%",
                   maxWidth: "400px",
-                  borderRadius: "1.5rem",
+                  borderRadius: "clamp(1rem, 3vw, 1.5rem)",
                   margin: "0 auto",
                   display: "block",
                   objectFit: "cover",
-                  boxShadow: "0 20px 60px rgba(78,95,69,0.2)",
+                  boxShadow: "0 12px 40px rgba(78,95,69,0.18)",
                 }}
               />
             </div>
@@ -33,12 +33,12 @@ export default function FounderStory() {
               <span
                 style={{
                   display: "inline-block",
-                  fontSize: "0.8rem",
+                  fontSize: "clamp(0.7rem, 2vw, 0.8rem)",
                   fontWeight: 600,
                   color: "var(--color-primary)",
                   textTransform: "uppercase",
                   letterSpacing: "0.15em",
-                  marginBottom: "0.75rem",
+                  marginBottom: "0.5rem",
                   fontFamily: "var(--font-body)",
                 }}
               >
@@ -47,39 +47,54 @@ export default function FounderStory() {
               <h2
                 style={{
                   fontFamily: "var(--font-heading)",
-                  fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                  fontSize: "clamp(1.35rem, 3.5vw, 2.4rem)",
                   fontWeight: 700,
                   color: "var(--color-primary-dark)",
-                  marginBottom: "1.5rem",
+                  marginBottom: "clamp(0.75rem, 2vw, 1.5rem)",
                 }}
               >
-                Why I Built AGASTYA
+                My Journey to AGASTYA
               </h2>
               <div
                 style={{
                   fontFamily: "var(--font-body)",
-                  fontSize: "1rem",
+                  fontSize: "clamp(0.88rem, 2.2vw, 1rem)",
                   lineHeight: 1.8,
                   color: "#555",
                   fontWeight: 300,
                 }}
               >
-                <p style={{ marginBottom: "1rem" }}>
-                  {/* PLACEHOLDER: Replace with Rashmitha's actual transformation story */}
-                  My journey with yoga began during a time when I needed it most. Dealing with
-                  stress, low energy, and a disconnect from my own body, I turned to power yoga
-                  as a last resort — and it changed everything.
+                <p style={{ marginBottom: "0.9rem" }}>
+                  A few years ago, I was running on empty. Long hours, constant stress, and
+                  this nagging feeling that I'd completely lost touch with my own body. I wasn't
+                  sleeping well, my energy was gone, and honestly — I didn't feel like myself
+                  anymore. A friend suggested I try a yoga class. I almost didn't go. But
+                  something told me I needed to.
                 </p>
-                <p style={{ marginBottom: "1rem" }}>
-                  Over the years, yoga gave me not just physical strength, but a deep sense of
-                  confidence and peace that I never thought possible. I realized that so many
-                  women around me were facing the same struggles, yet didn't have access to
-                  quality, personal yoga guidance.
+                <p style={{ marginBottom: "0.9rem" }}>
+                  That first class humbled me. I couldn't hold a plank, my balance was all over
+                  the place, and I left drenched in sweat. But I also left feeling something I
+                  hadn't felt in a long time — <em>alive</em>. So I went back. And again. And
+                  again. Slowly, the changes crept in — not just the physical ones (though my
+                  body transformed in ways I didn't think were possible), but something deeper.
+                  I started sleeping better, thinking clearer, and carrying myself with a quiet
+                  confidence I'd never had before. Yoga didn't just give me strength; it gave
+                  me back <em>myself</em>.
+                </p>
+                <p style={{ marginBottom: "0.9rem" }}>
+                  As I grew in my practice and earned my certifications, I kept noticing the
+                  same thing — so many women around me were fighting the exact same battles I'd
+                  been through. The exhaustion, the self-doubt, the feeling of being stuck. And
+                  most of them had no idea that yoga could help, or they didn't know where to
+                  start.
                 </p>
                 <p>
-                  That's why I created AGASTYA — to bring the transformative power of yoga to
-                  every woman, regardless of where she is. This is more than a class; it's a
-                  community built on strength, support, and self-discovery.
+                  That's why I created <strong>AGASTYA</strong>. Not as a business plan or a
+                  brand exercise, but because I genuinely believe every woman deserves to feel
+                  what I felt on that mat — that spark of "I can do this." AGASTYA is my way of
+                  holding that door open for you, wherever you are, whatever your level. This
+                  isn't just yoga classes. It's the community I wish I'd had when I was
+                  starting out. 💛
                 </p>
               </div>
             </div>

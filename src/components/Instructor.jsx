@@ -10,14 +10,14 @@ export default function Instructor() {
     >
       <div className="container-main">
         <ScrollReveal>
-          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+          <div style={{ textAlign: "center", marginBottom: "clamp(1.5rem, 4vw, 3rem)" }}>
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                fontSize: "clamp(1.3rem, 3.5vw, 2.4rem)",
                 fontWeight: 700,
                 color: "var(--color-primary-dark)",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               Your Instructor
@@ -31,7 +31,7 @@ export default function Instructor() {
               maxWidth: "600px",
               margin: "0 auto",
               background: "#fff",
-              borderRadius: "1.5rem",
+              borderRadius: "clamp(1rem, 2.5vw, 1.5rem)",
               overflow: "hidden",
               border: "1px solid rgba(78,95,69,0.08)",
               boxShadow: "0 8px 40px rgba(78,95,69,0.08)",
@@ -40,7 +40,7 @@ export default function Instructor() {
             {/* Photo */}
             <img
               src={rashmithaInstructor}
-              alt="Rashmitha practicing power yoga"
+              alt="Rashmitha practicing hatha yoga"
               style={{
                 width: "100%",
                 aspectRatio: "16 / 9",
@@ -50,28 +50,29 @@ export default function Instructor() {
             />
 
             {/* Bio */}
-            <div style={{ padding: "1.5rem 1.25rem 2rem" }}>
+            <div style={{ padding: "clamp(1rem, 3vw, 1.5rem) clamp(1rem, 2.5vw, 1.25rem) clamp(1.25rem, 3.5vw, 2rem)" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "0.75rem",
-                  marginBottom: "1rem",
+                  gap: "0.6rem",
+                  marginBottom: "0.75rem",
                 }}
               >
                 <div
                   style={{
                     width: "4px",
-                    height: "40px",
+                    height: "36px",
                     background: "var(--color-primary)",
                     borderRadius: "2px",
+                    flexShrink: 0,
                   }}
                 />
                 <div>
                   <h3
                     style={{
                       fontFamily: "var(--font-heading)",
-                      fontSize: "1.4rem",
+                      fontSize: "clamp(1.15rem, 3vw, 1.4rem)",
                       fontWeight: 700,
                       color: "var(--color-primary-dark)",
                       lineHeight: 1.2,
@@ -82,12 +83,12 @@ export default function Instructor() {
                   <p
                     style={{
                       fontFamily: "var(--font-body)",
-                      fontSize: "0.85rem",
+                      fontSize: "clamp(0.75rem, 2vw, 0.85rem)",
                       color: "var(--color-primary)",
                       fontWeight: 600,
                     }}
                   >
-                    Certified Power Yoga Instructor · 6+ Years
+                    Certified Hatha Yoga Instructor · 6+ Years
                   </p>
                 </div>
               </div>
@@ -95,13 +96,13 @@ export default function Instructor() {
               <p
                 style={{
                   fontFamily: "var(--font-body)",
-                  fontSize: "0.95rem",
-                  lineHeight: 1.7,
+                  fontSize: "clamp(0.85rem, 2.2vw, 0.95rem)",
+                  lineHeight: 1.65,
                   color: "#666",
                   fontWeight: 300,
                 }}
               >
-                Rashmitha is a certified power yoga instructor with over 6 years of
+                Rashmitha is a certified hatha yoga instructor with over 6 years of
                 experience helping women improve their physical strength, flexibility,
                 and mental wellness. Her teaching style blends challenge with compassion,
                 ensuring every student feels seen, supported, and empowered.

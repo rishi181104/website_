@@ -61,14 +61,14 @@ export default function FinalCTA() {
 
       <div className="container-main" style={{ position: "relative", zIndex: 1 }}>
         <ScrollReveal>
-          <div style={{ textAlign: "center", maxWidth: "650px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center", maxWidth: "650px", margin: "0 auto", padding: "0 0.25rem" }}>
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "clamp(1.6rem, 4vw, 2.6rem)",
+                fontSize: "clamp(1.35rem, 4vw, 2.6rem)",
                 fontWeight: 700,
                 color: "var(--color-cream)",
-                marginBottom: "1rem",
+                marginBottom: "0.85rem",
                 lineHeight: 1.25,
               }}
             >
@@ -78,11 +78,11 @@ export default function FinalCTA() {
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "1.05rem",
+                fontSize: "clamp(0.88rem, 2.2vw, 1.05rem)",
                 color: "rgba(244,240,230,0.8)",
-                lineHeight: 1.7,
+                lineHeight: 1.65,
                 fontWeight: 300,
-                marginBottom: "2rem",
+                marginBottom: "1.5rem",
               }}
             >
               Join our Founding Batch and experience the AGASTYA difference before
@@ -90,22 +90,25 @@ export default function FinalCTA() {
             </p>
 
             <a
-              href={whatsappLink("Hi, I want to book my free trial class with Agastya Power Yoga")}
+              href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsAppClick("final_cta_free_trial")}
               style={{
-                display: "inline-block",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
                 background: "var(--color-cream)",
                 color: "var(--color-primary-dark)",
-                padding: "1rem 2.5rem",
+                padding: "0.85rem clamp(1.5rem, 5vw, 2.5rem)",
                 borderRadius: "9999px",
-                fontSize: "1rem",
+                fontSize: "clamp(0.88rem, 2.2vw, 1rem)",
                 fontWeight: 600,
                 fontFamily: "var(--font-body)",
                 textDecoration: "none",
                 transition: "all 0.3s",
                 boxShadow: "0 4px 24px rgba(0,0,0,0.15)",
+                minHeight: "48px",
               }}
               onMouseEnter={(e) => {
                 e.target.style.transform = "translateY(-3px) scale(1.02)";
@@ -122,9 +125,9 @@ export default function FinalCTA() {
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "0.82rem",
+                fontSize: "clamp(0.72rem, 2vw, 0.82rem)",
                 color: "rgba(244,240,230,0.55)",
-                marginTop: "1rem",
+                marginTop: "0.85rem",
                 fontWeight: 300,
               }}
             >
