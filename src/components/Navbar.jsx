@@ -53,7 +53,7 @@ export default function Navbar() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "1rem 1.5rem",
+          padding: "0.75rem 1rem",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -71,13 +71,14 @@ export default function Navbar() {
             alignItems: "center",
             gap: "0.5rem",
             textDecoration: "none",
+            flexShrink: 0,
           }}
         >
           <img
             src={agastyaLogo}
             alt="AGASTYA Logo"
             style={{
-              height: "40px",
+              height: "36px",
               width: "auto",
               borderRadius: "4px",
             }}
@@ -85,7 +86,7 @@ export default function Navbar() {
           <span
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "1.4rem",
+              fontSize: "1.25rem",
               fontWeight: 700,
               color: "var(--color-primary)",
               letterSpacing: "0.05em",
@@ -159,9 +160,9 @@ export default function Navbar() {
             border: "none",
             cursor: "pointer",
             padding: "0.5rem",
-            display: "flex",
             flexDirection: "column",
             gap: "5px",
+            zIndex: 51,
           }}
         >
           <span
@@ -212,7 +213,7 @@ export default function Navbar() {
             }}
             className="nav-mobile-menu"
           >
-            <div style={{ padding: "1rem 1.5rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <div style={{ padding: "1rem 1.5rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.label}
@@ -222,8 +223,9 @@ export default function Navbar() {
                     color: "#555",
                     textDecoration: "none",
                     fontSize: "1rem",
-                    padding: "0.5rem 0",
+                    padding: "0.75rem 0",
                     borderBottom: "1px solid rgba(78,95,69,0.06)",
+                    fontWeight: 400,
                   }}
                 >
                   {link.label}
@@ -240,13 +242,13 @@ export default function Navbar() {
                 style={{
                   background: "var(--color-primary)",
                   color: "#fff",
-                  padding: "0.75rem",
+                  padding: "0.85rem",
                   borderRadius: "9999px",
                   fontSize: "0.9rem",
                   fontWeight: 600,
                   textDecoration: "none",
                   textAlign: "center",
-                  marginTop: "0.5rem",
+                  marginTop: "0.75rem",
                 }}
               >
                 Book Free Trial

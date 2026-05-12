@@ -9,11 +9,11 @@ export default function Hero() {
       id="hero"
       style={{
         background: "linear-gradient(180deg, var(--color-cream) 0%, var(--color-warm-white) 100%)",
-        minHeight: "85vh",
+        minHeight: "80vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "5rem 1.5rem 4rem",
+        padding: "4rem 1rem 3rem",
         position: "relative",
         overflow: "hidden",
       }}
@@ -63,18 +63,19 @@ export default function Hero() {
         }}
       />
 
-      <div style={{ maxWidth: "800px", textAlign: "center", position: "relative", zIndex: 1 }}>
+      <div style={{ maxWidth: "800px", textAlign: "center", position: "relative", zIndex: 1, width: "100%" }}>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{
             fontFamily: "var(--font-heading)",
-            fontSize: "clamp(2rem, 5vw, 3.5rem)",
+            fontSize: "clamp(1.75rem, 5vw, 3.5rem)",
             fontWeight: 700,
             color: "var(--color-primary-dark)",
             lineHeight: 1.2,
-            marginBottom: "1.5rem",
+            marginBottom: "1.25rem",
+            padding: "0 0.5rem",
           }}
         >
           Empower Your Mind &amp; Body Through Power Yoga
@@ -86,12 +87,13 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           style={{
             fontFamily: "var(--font-body)",
-            fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+            fontSize: "clamp(0.9rem, 2vw, 1.15rem)",
             color: "#666",
             lineHeight: 1.7,
             maxWidth: "650px",
-            margin: "0 auto 2.5rem",
+            margin: "0 auto 2rem",
             fontWeight: 300,
+            padding: "0 0.5rem",
           }}
         >
           Online power yoga sessions designed for women and students to build strength,
@@ -104,9 +106,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           style={{
             display: "flex",
-            gap: "1rem",
+            gap: "0.75rem",
             justifyContent: "center",
             flexWrap: "wrap",
+            padding: "0 0.5rem",
           }}
         >
           <a
@@ -117,13 +120,14 @@ export default function Hero() {
             style={{
               background: "var(--color-primary)",
               color: "#fff",
-              padding: "0.9rem 2rem",
+              padding: "0.85rem 1.75rem",
               borderRadius: "9999px",
-              fontSize: "0.95rem",
+              fontSize: "0.9rem",
               fontWeight: 600,
               textDecoration: "none",
               transition: "all 0.3s",
               boxShadow: "0 4px 20px rgba(78,95,69,0.25)",
+              whiteSpace: "nowrap",
             }}
             onMouseEnter={(e) => {
               e.target.style.background = "var(--color-primary-dark)";
@@ -146,13 +150,14 @@ export default function Hero() {
             style={{
               background: "transparent",
               color: "var(--color-primary)",
-              padding: "0.9rem 2rem",
+              padding: "0.85rem 1.75rem",
               borderRadius: "9999px",
-              fontSize: "0.95rem",
+              fontSize: "0.9rem",
               fontWeight: 600,
               textDecoration: "none",
               border: "2px solid var(--color-primary)",
               transition: "all 0.3s",
+              whiteSpace: "nowrap",
             }}
             onMouseEnter={(e) => {
               e.target.style.background = "var(--color-primary)";

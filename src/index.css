@@ -22,7 +22,8 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   background-color: var(--color-warm-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,7 +42,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Utility Classes ===== */
 .section-padding {
-  padding: 5rem 1.5rem;
+  padding: 3.5rem 1rem;
+}
+
+@media (min-width: 480px) {
+  .section-padding {
+    padding: 4rem 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -94,11 +102,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Navbar Responsive ===== */
 .nav-desktop-links {
-  display: none;
+  display: none !important;
 }
 
 .nav-hamburger {
-  display: flex;
+  display: flex !important;
 }
 
 .nav-mobile-menu {
@@ -107,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .nav-desktop-links {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-hamburger {
@@ -119,11 +127,67 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ===== Mobile-first grid helpers ===== */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .differentiators-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .differentiators-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 /* ===== Founder Story Grid ===== */
 .founder-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -134,10 +198,21 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .founder-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
 
   .founder-photo-col {
     order: 0;
+  }
+}
+
+/* ===== Mobile touch-friendly tap targets ===== */
+@media (max-width: 767px) {
+  /* Ensure tap targets are at least 44px */
+  .nav-mobile-menu a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 }
 

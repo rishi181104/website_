@@ -18,14 +18,14 @@ export default function Benefits() {
     >
       <div className="container-main">
         <ScrollReveal>
-          <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
+          <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)",
+                fontSize: "clamp(1.5rem, 3.5vw, 2.4rem)",
                 fontWeight: 700,
                 color: "var(--color-primary-dark)",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               What Power Yoga Will Do For You
@@ -34,7 +34,7 @@ export default function Benefits() {
               style={{
                 fontFamily: "var(--font-body)",
                 color: "#888",
-                fontSize: "1rem",
+                fontSize: "0.95rem",
                 fontWeight: 300,
               }}
             >
@@ -43,13 +43,7 @@ export default function Benefits() {
           </div>
         </ScrollReveal>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
+        <div className="benefits-grid">
           {BENEFITS.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.08}>
               <div
@@ -57,21 +51,21 @@ export default function Benefits() {
                 style={{
                   background: "var(--color-cream)",
                   borderRadius: "1rem",
-                  padding: "2rem 1.75rem",
+                  padding: "1.5rem 1.25rem",
                   display: "flex",
                   flexDirection: "column",
-                  gap: "0.75rem",
+                  gap: "0.5rem",
                   cursor: "default",
                   border: "1px solid rgba(78,95,69,0.06)",
                 }}
               >
-                <span style={{ fontSize: "2rem" }} aria-hidden="true">
+                <span style={{ fontSize: "1.75rem" }} aria-hidden="true">
                   {b.icon}
                 </span>
                 <h3
                   style={{
                     fontFamily: "var(--font-heading)",
-                    fontSize: "1.2rem",
+                    fontSize: "1.1rem",
                     fontWeight: 700,
                     color: "var(--color-primary-dark)",
                   }}
@@ -81,7 +75,7 @@ export default function Benefits() {
                 <p
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "0.9rem",
+                    fontSize: "0.85rem",
                     color: "#666",
                     lineHeight: 1.6,
                     fontWeight: 300,

@@ -50,7 +50,7 @@ export default function Instructor() {
             />
 
             {/* Bio */}
-            <div style={{ padding: "2rem 2rem 2.5rem" }}>
+            <div style={{ padding: "1.5rem 1.25rem 2rem" }}>
               <div
                 style={{
                   display: "flex",

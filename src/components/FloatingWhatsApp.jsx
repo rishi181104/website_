@@ -12,11 +12,11 @@ export default function FloatingWhatsApp() {
       aria-label="Chat on WhatsApp"
       style={{
         position: "fixed",
-        bottom: "1.5rem",
-        right: "1.5rem",
+        bottom: "1.25rem",
+        right: "1rem",
         zIndex: 100,
-        width: "60px",
-        height: "60px",
+        width: "54px",
+        height: "54px",
         borderRadius: "50%",
         background: "#25D366",
         display: "flex",
@@ -31,8 +31,8 @@ export default function FloatingWhatsApp() {
     >
       {/* WhatsApp SVG Icon */}
       <svg
-        width="32"
-        height="32"
+        width="28"
+        height="28"
         viewBox="0 0 24 24"
         fill="#fff"
         xmlns="http://www.w3.org/2000/svg"
