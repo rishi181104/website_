@@ -179,32 +179,43 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.65, ease: "easeOut" }}
-          style={{ textAlign: "center", marginTop: "0.75rem" }}
+          className="hero-cta-buttons"
+          style={{ marginTop: "0.5rem" }}
         >
           <a
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             style={{
+              background: "transparent",
+              color: "#E1306C",
+              padding: "0.8rem 1.5rem",
+              borderRadius: "9999px",
+              fontSize: "clamp(0.82rem, 2vw, 0.9rem)",
+              fontWeight: 600,
+              textDecoration: "none",
+              border: "2px solid #E1306C",
+              transition: "all 0.3s",
+              whiteSpace: "nowrap",
+              minHeight: "48px",
               display: "inline-flex",
               alignItems: "center",
-              gap: "0.4rem",
-              color: "#999",
-              fontSize: "clamp(0.78rem, 2vw, 0.88rem)",
-              fontFamily: "var(--font-body)",
-              fontWeight: 500,
-              textDecoration: "none",
-              transition: "color 0.25s ease",
-              minHeight: "44px",
+              gap: "0.5rem",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#E1306C";
+              e.currentTarget.style.background = "#E1306C";
+              e.currentTarget.style.color = "#fff";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 6px 28px rgba(225,48,108,0.3)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#999";
+              e.currentTarget.style.background = "transparent";
+              e.currentTarget.style.color = "#E1306C";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
             }}
           >
-            <InstagramIcon size={16} />
+            <InstagramIcon size={18} />
             Follow @agastya_poweryoga
           </a>
         </motion.div>
