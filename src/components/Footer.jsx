@@ -1,4 +1,5 @@
 import agastyaLogo from "../assets/agastya_mianlogo.jpg";
+import { InstagramIcon, INSTAGRAM_URL } from "./InstagramSection";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -87,15 +88,18 @@ export default function Footer() {
           }}
         >
           <a
-            href="https://instagram.com/agastya_poweryoga"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             style={{
               ...linkStyle,
               gap: "0.4rem",
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#E1306C")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(244,240,230,0.7)")}
           >
-            📸 @agastya_poweryoga
+            <InstagramIcon size={16} />
+            @agastya_poweryoga
           </a>
           <a
             href="https://wa.me/918978798457"

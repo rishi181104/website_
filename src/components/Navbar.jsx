@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { whatsappLink, trackWhatsAppClick } from "../utils/whatsapp";
+import { InstagramIcon, INSTAGRAM_URL } from "./InstagramSection";
 import agastyaLogo from "../assets/agastya_mianlogo.jpg";
 
 const NAV_LINKS = [
@@ -123,6 +124,35 @@ export default function Navbar() {
             </a>
           ))}
           <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Instagram"
+            style={{
+              color: "#555",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "36px",
+              height: "36px",
+              borderRadius: "50%",
+              transition: "all 0.25s ease",
+              textDecoration: "none",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#E1306C";
+              e.currentTarget.style.background = "rgba(225,48,108,0.08)";
+              e.currentTarget.style.transform = "scale(1.1)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#555";
+              e.currentTarget.style.background = "transparent";
+              e.currentTarget.style.transform = "scale(1)";
+            }}
+          >
+            <InstagramIcon size={20} />
+          </a>
+          <a
             href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
             target="_blank"
             rel="noopener noreferrer"
@@ -242,6 +272,30 @@ export default function Navbar() {
                 </a>
               ))}
               <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "0.5rem",
+                  background: "linear-gradient(135deg, #833AB4, #E1306C, #F77737)",
+                  color: "#fff",
+                  padding: "0.85rem",
+                  borderRadius: "9999px",
+                  fontSize: "0.9rem",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  marginTop: "0.5rem",
+                }}
+              >
+                <InstagramIcon size={18} />
+                Follow on Instagram
+              </a>
+              <a
                 href={whatsappLink("Hi, I want to book my free trial class with Agastya Hatha Yoga")}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -258,7 +312,7 @@ export default function Navbar() {
                   fontWeight: 600,
                   textDecoration: "none",
                   textAlign: "center",
-                  marginTop: "0.75rem",
+                  marginTop: "0.25rem",
                 }}
               >
                 Book Free Trial

@@ -614,6 +614,64 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ===== Instagram Section ===== */
+.ig-posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .ig-posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Force Instagram embeds to fill their container */
+.ig-embed-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ig-embed-wrapper .instagram-media {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ig-embed-wrapper iframe {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ig-embed-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(78, 95, 69, 0.12);
+  }
+}
+
+/* Loading spinner */
+.ig-loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(225, 48, 108, 0.15);
+  border-top-color: #E1306C;
+  border-radius: 50%;
+  animation: igSpin 0.8s linear infinite;
+}
+
+@keyframes igSpin {
+  to { transform: rotate(360deg); }
+}
+
 /* ===== Safe area insets for notched phones ===== */
 @supports (padding: env(safe-area-inset-bottom)) {
   .whatsapp-pulse {

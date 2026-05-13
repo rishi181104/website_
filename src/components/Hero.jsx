@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { whatsappLink, trackWhatsAppClick } from "../utils/whatsapp";
+import { InstagramIcon, INSTAGRAM_URL } from "./InstagramSection";
 import ScrollReveal from "./ScrollReveal";
 import agastyaLogo from "../assets/agastya_mianlogo.jpg";
 
@@ -171,6 +172,40 @@ export default function Hero() {
             }}
           >
             💬 Chat on WhatsApp
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.65, ease: "easeOut" }}
+          style={{ textAlign: "center", marginTop: "0.75rem" }}
+        >
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.4rem",
+              color: "#999",
+              fontSize: "clamp(0.78rem, 2vw, 0.88rem)",
+              fontFamily: "var(--font-body)",
+              fontWeight: 500,
+              textDecoration: "none",
+              transition: "color 0.25s ease",
+              minHeight: "44px",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#E1306C";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#999";
+            }}
+          >
+            <InstagramIcon size={16} />
+            Follow @agastya_poweryoga
           </a>
         </motion.div>
       </div>
