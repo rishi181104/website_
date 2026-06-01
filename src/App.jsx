@@ -8,6 +8,7 @@ import Programs from "./components/Programs";
 import Instructor from "./components/Instructor";
 import Certifications from "./components/Certifications";
 import Differentiators from "./components/Differentiators";
+import Testimonials from "./components/Testimonials";
 import InstagramSection from "./components/InstagramSection";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -27,6 +28,7 @@ export default function App() {
         <Instructor />
         <Certifications />
         <Differentiators />
+        <Testimonials />
         <InstagramSection />
         <FinalCTA />
       </main>
