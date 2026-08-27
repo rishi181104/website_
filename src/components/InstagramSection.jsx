@@ -5,10 +5,10 @@ const INSTAGRAM_URL =
   "https://www.instagram.com/agastya_poweryoga?igsh=MWU5M2h4bDhhaGlybA==";
 
 const INSTAGRAM_POSTS = [
+  "https://www.instagram.com/reel/DYCvtQORu0O/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==/",
   "https://www.instagram.com/p/DXz6sqYkS6g/",
   "https://www.instagram.com/p/DU9dJqRkVER/",
   "https://www.instagram.com/p/DX5KvisEb6A/",
-  "https://www.instagram.com/p/C6FYyngronC/",
 ];
 
 function InstagramIcon({ size = 22 }) {
